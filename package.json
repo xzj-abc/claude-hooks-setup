@@ -9,6 +9,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "dependencies": {
+    "node-mac-notifier": "^2.0.2"
+  },
   "keywords": [
     "claude",
     "hooks",
