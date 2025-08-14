@@ -187,7 +187,7 @@ Contributions are welcome! Please feel free to submit issues and pull requests.
 ### Development Setup
 
 ```bash
-git clone https://github.com/yourusername/claude-hooks-setup.git
+git clone https://github.com/xzj-abc/claude-hooks-setup.git
 cd claude-hooks-setup
 npm install
 npm link  # For local testing
