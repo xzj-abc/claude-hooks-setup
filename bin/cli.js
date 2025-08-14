@@ -27,8 +27,9 @@ async function main() {
         console.log('');
         console.log('📝 Next steps:');
         console.log('1. Restart Claude Code to load the new configuration');
-        console.log('2. Your hooks will automatically trigger on stop events');
+        console.log('2. Auto-commit hook will trigger on stop events');
         console.log('3. Commit messages will be extracted from your last assistant message');
+        console.log('4. Hook file created: ~/.claude/hooks/auto-commit-hook.js');
         
     } catch (error) {
         console.error('❌ Setup failed:', error.message);

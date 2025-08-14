@@ -64,7 +64,16 @@ The tool automatically configures your Claude Code `settings.json` with:
 ```json
 {
   "hooks": {
-    "stop": "hooks/stop-hook-anthropic.js"
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "node ~/.claude/hooks/auto-commit-hook.js"
+          }
+        ]
+      }
+    ]
   },
   "editor": {
     "auto_save": true,
@@ -93,7 +102,7 @@ After setup, your `.claude` directory will look like:
 ~/.claude/
 ├── settings.json          # Claude Code configuration
 ├── hooks/
-│   └── stop-hook-anthropic.js  # Auto-commit hook
+│   └── auto-commit-hook.js  # Auto-commit hook
 └── ... (other Claude files)
 ```
 
@@ -146,12 +155,12 @@ To temporarily disable auto-commits, edit your `settings.json`:
 ```json
 {
   "hooks": {
-    "stop": ""
+    "Stop": []
   }
 }
 ```
 
-Or remove the entire `hooks` section.
+Or remove the specific hook object from the `Stop` array.
 
 ## 🐛 Troubleshooting
 
