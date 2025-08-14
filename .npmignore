@@ -1,0 +1,34 @@
+# Development files
+.git/
+.gitignore
+*.log
+node_modules/
+.npm/
+.eslintrc*
+.prettierrc*
+
+# Testing
+test/
+tests/
+*.test.js
+*.spec.js
+coverage/
+
+# Documentation drafts
+docs/
+*.md.backup
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temporary files
+*.tmp
+*.temp
